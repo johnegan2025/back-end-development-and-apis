@@ -1,17 +1,10 @@
-if (!Number.isInteger(number) || number <= 1) {
+function isPrime(number) {
+  if (number < 2) {
     return false;
   }
 
-  if (number === 2) {
-    return true;
-  }
-
-  if (number % 2 === 0) {
-    return false;
-  }
-
-  for (let divisor = 3; divisor <= Math.sqrt(number); divisor += 2) {
-    if (number % divisor === 0) {
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) {
       return false;
     }
   }
@@ -19,4 +12,4 @@ if (!Number.isInteger(number) || number <= 1) {
   return true;
 }
 
-module.exports.isPrime = isPrime;
+module.exports = { isPrime };

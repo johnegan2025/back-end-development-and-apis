@@ -1,10 +1,9 @@
 {
   "name": "prime-checker",
   "version": "1.0.0",
-  "description": "A small CommonJS module for checking whether an integer is prime.",
-  "keywords": ["prime", "number", "checker"],
+  "description": "A module for checking whether a number is prime",
+  "keywords": ["prime", "number", "math"],
   "license": "MIT",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js"
+  "author": "John Egan",
+  "type": "commonjs"
 }
